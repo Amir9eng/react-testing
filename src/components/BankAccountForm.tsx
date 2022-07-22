@@ -11,7 +11,7 @@ const validationSchema = object({
     .length(9, "Must contain a valid routing number")
     .required("Enter a valid bank routing number"),
   accountNumber: string()
-    .min(9, "Must contain at least 9 digit")
+    .min(9, "Must contain at least 9 digits")
     .max(12, "Must contain no more than 12 digits")
     .required("Enter a valid bank account number"),
 });
